@@ -1,0 +1,212 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #main{
+
+    }
+    #header{
+
+    }
+
+    /* chuyen chu sang hang ben phai */
+    .before_header{
+        background-color: #f6f7f6;
+        height: 46px;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+
+    }
+    #nav1{
+        margin-right: 160px;
+    }
+
+    #nav1 .search-icon{
+        color: red;
+        margin-right: 15px;
+    }
+        
+    /* tranh chen chu subspace */
+    #nav1 li {
+        display: inline-block;
+        position: relative;
+
+    }
+    #nav1 li a{
+        color: #2A3C95;
+        text-decoration: none;
+        line-height: 46px;
+        margin-left: 15px;
+
+    }
+    #nav1 li:hover .subnab1 li {
+        width: 100%;
+        display: block;
+        position: absolute; 
+        /* tranh chen chu subnab */
+    }
+    #nav1 >li >a:hover{
+        color: red;
+    }
+
+    .flag1{ 
+        background: url(https://usth.edu.vn/wp-content/themes/caia/images/vi.svg) no-repeat left 15px center ;
+        background-color: rgb(225, 225, 225);
+    }
+    .flag2{
+        
+        background: url(https://usth.edu.vn/en/wp-content/themes/caia/images/en.svg) no-repeat left 15px center ;
+        background-color: rgb(225,225,225) ;
+
+
+    }
+    .text{
+        padding: 45px ;
+    }
+
+    #nav1 .subnab1 li{
+        display: none;
+        width: 100%;
+        position: absolute;
+
+    }
+
+    /* truoc khi dat float left phai kiem tra div xem dung hay chua */
+    .site_header{
+        float: left;
+    
+        margin-top: 30px;
+    }
+    .title_area{
+        float: left;
+        
+    }
+    .title_area .img_area {
+        margin-left: 160px;
+        margin-right: -100px;
+    }
+    .list_area{
+        float: left;
+    }
+    .para{
+        float: left;
+        margin-right: 200px;
+        border-left: 3px solid #f63a06 ;
+        padding-left: 6px;
+
+
+        
+    }
+    .para p {
+        text-transform: uppercase;
+        color: #2A3C95;
+        font-weight: 700;
+    }
+    .infor {
+        float: left;
+        margin-left: -30px;
+        margin-right: 20px  ;
+    
+    }
+
+    .infor a{
+        text-decoration: none;
+    }
+    .img1{
+        float: left ;
+    }
+    .nav_header{
+        margin-top: 120px;
+        background-color: #2A3C95;
+        width: 100%;
+        height: 46px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        /* position: sticky;
+        top: 10; */
+        
+    }
+    .nav2 li{
+        display: inline-block;
+        
+    }
+     .nav2 li a{
+        color: #f6f7f6;
+        text-decoration: none;
+        text-align: center;
+        line-height: 46px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    .nav2 li:hover a {
+        display: inline-block;
+        background-color: #f63a06;
+    }
+    
+    li .ti-home {
+        display: inline-block;
+        line-height: 46px;
+        color: #f6f7f6;
+        background-color: #f63a06;
+        padding:0 16px;
+    }
+
+    /* trượt ảnh */
+    #slider{
+        margin-top: 46px;
+        position: relative;
+        overflow: hidden;
+    }
+    .slider-image {
+        display: flex;
+        width: 100%;
+    }
+    .slider-image img {
+        transition: all 0.05ms ease;
+    }
+    .slider-image input{
+        display: none;
+    }
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .dots label {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: solid #2A3C95 3px;
+        cursor: pointer;
+        transition: all 0.05s ease;
+        margin: 5px;
+    }
+    .dots label:hover {
+        background-color: #2A3C95;
+    }
+    #img1:checked ~ .m1{
+        margin-left: 0;
+    }
+    #img2:checked ~ .m2{
+        margin-left: -100%;
+    }
+    #img3:checked ~ .m3{
+        margin-left: -200%;
+    }
+    
+
+    #content{
+
+    }
+    #footer{
+
+    }
